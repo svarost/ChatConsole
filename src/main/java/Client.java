@@ -50,6 +50,7 @@ public class Client {
             e.printStackTrace();
         } finally {
             try {
+                assert socket != null;
                 socket.close();
             } catch (IOException ex) {
                 ex.printStackTrace();
